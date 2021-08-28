@@ -16,7 +16,7 @@ function onData (data) {
         document.querySelector('#result').appendChild(img);
     })
 }
-
+//
 /*_______________________________________________________________________*/
 
 /*____________________________________________________________________*/
@@ -25,6 +25,10 @@ get_tsk_btn.addEventListener('click',  () => {
     const myProm = getTasks(i++);
     myProm.then(onDataTasks);
 })
+
+function lala() {
+
+}
 
 function onDataTasks (data) {
     data.forEach(el => {
